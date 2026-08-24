@@ -1,0 +1,27 @@
+import type { Technology } from '../types'
+
+export const technologies: Technology[] = [
+  { name: 'Java', category: 'backend' },
+  { name: 'Spring Boot', category: 'backend' },
+  { name: 'JavaScript', category: 'frontend' },
+  { name: 'TypeScript', category: 'frontend' },
+  { name: 'React', category: 'frontend' },
+  { name: 'Node.js', category: 'backend' },
+  { name: 'NestJS', category: 'backend' },
+  { name: 'PostgreSQL', category: 'database' },
+  { name: 'SQL Server', category: 'database' },
+  { name: 'REST APIs', category: 'backend' },
+  { name: 'Git', category: 'tool' },
+  { name: 'Docker', category: 'devops' },
+  { name: 'CI/CD', category: 'devops' },
+  { name: 'JUnit', category: 'tool' },
+  { name: 'Mockito', category: 'tool' },
+  { name: 'MapStruct', category: 'tool' },
+  { name: 'Maven', category: 'tool' },
+  { name: 'Jenkins', category: 'devops' },
+  { name: 'OpenAI', category: 'ai' },
+  { name: 'MCP', category: 'ai' },
+  { name: 'Embeddings', category: 'ai' },
+  { name: 'RAG', category: 'ai' },
+  { name: 'OIDC', category: 'tool' },
+]
