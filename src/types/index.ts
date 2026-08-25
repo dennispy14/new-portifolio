@@ -2,6 +2,7 @@ export type Technology = {
   name: string
   category: 'backend' | 'frontend' | 'database' | 'devops' | 'ai' | 'tool'
   icon?: string
+  iconUrl?: string
   accent: string
   glyph: string
 }

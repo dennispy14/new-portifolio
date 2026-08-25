@@ -1,9 +1,11 @@
-import type { CSSProperties } from 'react'
+import { useState, type CSSProperties } from 'react'
 import { SectionHeading } from '../components/SectionHeading'
 import { splitTechnologies, technologies } from '../data/technologies'
 import type { Technology } from '../types'
 
 function TechnologyItem({ tech, duplicate = false }: { tech: Technology; duplicate?: boolean }) {
+  const [iconFailed, setIconFailed] = useState(false)
+
   return (
     <li
       className="tech-item"
@@ -11,14 +13,20 @@ function TechnologyItem({ tech, duplicate = false }: { tech: Technology; duplica
       aria-hidden={duplicate || undefined}
     >
       <div className="tech-icon-shell">
-        <span className="tech-glyph">{tech.glyph}</span>
-        {tech.icon && (
+        {(!tech.icon && !tech.iconUrl || iconFailed) && (
+          <span className="tech-glyph">{tech.glyph}</span>
+        )}
+        {(tech.icon || tech.iconUrl) && !iconFailed && (
           <img
             className="tech-icon"
-            src={`https://cdn.simpleicons.org/${tech.icon}/${tech.accent.slice(1)}`}
+            src={tech.iconUrl ?? `https://cdn.simpleicons.org/${tech.icon}/${tech.accent.slice(1)}`}
             alt=""
             loading="lazy"
             decoding="async"
+            onError={(event) => {
+              event.currentTarget.style.display = 'none'
+              setIconFailed(true)
+            }}
           />
         )}
       </div>
