@@ -21,7 +21,7 @@ export function HeroSection() {
       <div className="hero-content">
         <div className="hero-copy">
           <Badge label="Disponível para projetos" />
-          <h1>Desenvolvedor Full Stack Pleno</h1>
+          <h1>Desenvolvedor Full Stack</h1>
           <p className="hero-tagline">
             Construindo aplicações escaláveis, modernas e orientadas a produto com Java,
             Spring, React e Inteligência Artificial.
@@ -32,7 +32,7 @@ export function HeroSection() {
               Ver projetos
             </a>
             <a
-              href="https://www.linkedin.com/in/dennis-py/"
+              href="https://www.linkedin.com/in/dennis-py-a497b5b4/"
               target="_blank"
               rel="noreferrer"
               className="button secondary"
@@ -40,7 +40,7 @@ export function HeroSection() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/dennispy"
+              href="https://github.com/dennispy14"
               target="_blank"
               rel="noreferrer"
               className="button secondary"

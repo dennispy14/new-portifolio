@@ -31,9 +31,7 @@ export function AccordionItem({
           <strong>{title}</strong>
           {subtitle ? <small>{subtitle}</small> : null}
         </span>
-        <span className="accordion-icon" aria-hidden="true">
-          {isOpen ? '−' : '+'}
-        </span>
+        <span className="accordion-icon" aria-hidden="true" />
       </button>
 
       <div
@@ -41,9 +39,10 @@ export function AccordionItem({
         className="accordion-panel"
         role="region"
         aria-labelledby={`trigger-${id}`}
-        hidden={!isOpen}
+        aria-hidden={!isOpen}
+        inert={!isOpen}
       >
-        {children}
+        <div className="accordion-panel-inner">{children}</div>
       </div>
     </div>
   )

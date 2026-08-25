@@ -42,7 +42,7 @@ export function AiSection() {
       />
 
       <SectionTabs tabs={aiTabs} activeTab={activeTab} onChange={setActiveTab}>
-        <div className="ai-feature-card">
+        <div key={activeTab} className="ai-feature-card tab-content-enter">
           <span className="feature-kicker">Área ativa</span>
           <h3>{current.title}</h3>
           <p>{current.text}</p>
