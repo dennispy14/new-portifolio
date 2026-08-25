@@ -31,4 +31,17 @@ export const projects: Project[] = [
     ],
     accent: 'cyan',
   },
+  {
+    title: 'Weather Finder',
+    summary:
+      'Aplicação web que permite consultar as condições climáticas de qualquer cidade, exibindo informações precisas e atualizadas a partir do nome pesquisado.',
+    stack: ['JavaScript'],
+    features: [
+      'Busca de condições climáticas por cidade',
+      'Consulta de informações atualizadas sobre o clima',
+      'Interface web responsiva',
+    ],
+    href: 'https://dennispy14.github.io/ClimaPorCidade/',
+    accent: 'blue',
+  },
 ]

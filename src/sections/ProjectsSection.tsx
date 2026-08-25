@@ -32,6 +32,17 @@ export function ProjectsSection() {
               <div className="project-details">
                 <p>{project.summary}</p>
 
+                {project.href && (
+                  <a
+                    className="project-link"
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ver projeto publicado <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+
                 <div className="project-stack" aria-label={`Stack de ${project.title}`}>
                   {project.stack.map((item) => (
                     <span key={item}>{item}</span>
