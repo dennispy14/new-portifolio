@@ -10,14 +10,14 @@ export const education: EducationItem[] = [
   {
     title: 'Tecnologia para Negócios com foco em Inteligência Artificial, Data Science e Big Data',
     institution: 'PUCRS',
-    period: 'Pós-graduação / MBA',
+    period: 'Pós-graduação / MBA / Em andamento',
     description: 'Especialização em IA, dados e estratégias digitais para negócios.',
   },
   {
-    title: 'Formação complementar',
+    title: 'Inteligência Artificial - Live Radial 12M',
     institution: 'UniRitter',
-    period: 'Em andamento',
-    description: 'Cursos de aprofundamento em tecnologia, desenvolvimento e inovação.',
+    period: 'Pós-graduação EAD / Em andamento',
+    description: 'Curso ativo com previsão de término em 19/02/2027.',
   },
 ]
 

@@ -5,7 +5,10 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { createServer } from 'vite'
 
 test('closed accordion keeps its panel mounted but inaccessible', async () => {
-  const server = await createServer({ server: { middlewareMode: true }, appType: 'custom' })
+  const server = await createServer({
+    server: { middlewareMode: true, hmr: false },
+    appType: 'custom',
+  })
 
   try {
     const { AccordionItem } = await server.ssrLoadModule('/src/components/AccordionItem.tsx')
