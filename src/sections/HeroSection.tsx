@@ -1,4 +1,5 @@
 import { Badge } from '../components/Badge'
+import { FaDownload, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 
 export function HeroSection() {
   return (
@@ -28,28 +29,47 @@ export function HeroSection() {
           </p>
 
           <div className="cta-group" aria-label="Ações principais">
-            <a href="#projetos" className="button primary">
-              Ver projetos
-            </a>
             <a
-              href="https://www.linkedin.com/in/dennis-py-a497b5b4/"
-              target="_blank"
-              rel="noreferrer"
-              className="button secondary"
+              href="/curriculo-dennis-py.pdf"
+              download="Curriculo-Dennis-Py.pdf"
+              className="button primary resume-button"
             >
-              LinkedIn
+              <FaDownload aria-hidden="true" />
+              <span>Baixar currículo</span>
             </a>
-            <a
-              href="https://github.com/dennispy14"
-              target="_blank"
-              rel="noreferrer"
-              className="button secondary"
-            >
-              GitHub
-            </a>
-            <a href="#contato" className="button secondary">
-              Contato
-            </a>
+            <div className="cta-secondary-actions">
+              <a
+                href="https://www.linkedin.com/in/dennis-py-a497b5b4/"
+                target="_blank"
+                rel="noreferrer"
+                className="button secondary icon-button"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <FaLinkedinIn aria-hidden="true" />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/dennispy14"
+                target="_blank"
+                rel="noreferrer"
+                className="button secondary icon-button"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <FaGithub aria-hidden="true" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="#contato"
+                className="button secondary icon-button"
+                aria-label="Contato"
+                title="Contato"
+              >
+                <FaEnvelope aria-hidden="true" />
+                <span>Contato</span>
+              </a>
+            </div>
           </div>
         </div>
 
