@@ -801,6 +801,14 @@ p {
   color: var(--text-soft);
 }
 
+.project-link {
+  width: fit-content;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
 .project-stack {
   margin-top: 1rem;
   display: flex;
