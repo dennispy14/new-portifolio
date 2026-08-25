@@ -44,4 +44,19 @@ export const projects: Project[] = [
     href: 'https://dennispy14.github.io/ClimaPorCidade/',
     accent: 'blue',
   },
+  {
+    title: 'Word Quest',
+    summary:
+      'Jogo web educativo e divertido de adivinhação de palavras, com dicas temáticas, tentativas por letra e pontuação para acompanhar o desafio.',
+    stack: ['React', 'JavaScript', 'CSS'],
+    features: [
+      'Adivinhação de palavras',
+      'Dicas por categoria',
+      'Controle de letras utilizadas',
+      'Sistema de pontuação',
+      'Interface responsiva',
+    ],
+    href: 'https://dennispy14.github.io/react-dev/',
+    accent: 'yellow',
+  },
 ]
