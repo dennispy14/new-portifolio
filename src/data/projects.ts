@@ -4,17 +4,18 @@ export const projects: Project[] = [
   {
     title: 'Saca Só',
     summary:
-      'Aplicação para gerenciamento de torneios de vôlei, com fluxos completos de cadastro, organização e acompanhamento de competições.',
+      'Aplicação para registrar partidas de vôlei em tempo real, com configuração de times e regras, lançamento de pontos e acompanhamento das estatísticas do jogo.',
     stack: ['React', 'Java', 'Spring Boot', 'PostgreSQL', 'Docker'],
     features: [
-      'Cadastro de jogadores',
-      'Formação de times',
-      'Criação de torneios',
-      'Geração de partidas',
-      'Controle de placares',
-      'Fases do torneio',
+      'Configuração de times e regras da partida',
+      'Placar ao vivo por sets',
+      'Registro de pontos por fundamento',
+      'Registro de erros e infrações',
+      'Histórico de eventos da partida',
+      'Estatísticas de partidas',
       'PWA',
     ],
+    href: 'https://volley-score-keeper.vercel.app/',
     accent: 'violet',
   },
   {
